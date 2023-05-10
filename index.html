@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Lesson13</title>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <div class="main-photo">
+                <img src="./vitaemo.jpg" alt="Квіти" class="main-photo-item">
+            </div>
+        </div>
+        <div id="form-container" class="form-container">
+            <form id="form" class="form">
+                <h2 class="form-title">
+                    Зареєструватись
+                </h2>
+                <div>
+                    <label class="form-label">Введіть логін</label>
+                    <input id="login" type="text" class="form-input" name="login">
+                    <div class="error-message-container">
+                        <p id="error-message-login" class="error-message"></p>
+                    </div>
+                    <!-- <p id="error-message-login" class="error-message"></p> -->
+                </div>
+                <div>
+                    <label class="form-label">Введіть пароль</label>
+                    <input id="password" type="text" class="form-input" name="password" placeholder="більше 6 символів">
+                    <div class="error-message-container">
+                        <p id="error-message-password" class="error-message"></p>
+                    </div>
+                </div>
+                <button id="button" class="button">Логін</button>
+            </form>
+        </div>
+        <div id="wrong-container" class="wrong-container">
+            <div class="wrong-block">
+                <p class="wrong-title">Нажаль ви ввели невірний логін чи пароль. Спробуйте ще раз</p>
+                <button id="wrong-button" type="button" class="wrong-button">ОК</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
